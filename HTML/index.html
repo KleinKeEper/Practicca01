@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica01</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    
+    <body>
+        <div id="contenido">
+            <div>
+                <labe>Producto</label>
+                <input type="text" class="inputpro" id="producto"><br>
+                <labe>Precio</label>
+                <input type="text" class="input" id="precio" onchange="validarnumero(this.value , 1);"><br>
+                <labe>Cantidad</label>
+                <input type="text" class="input" id="cantidad" onchange="validarnumero(this.value, 2);"><br>
+                
+                <input type="submit" class="inputsub" id="submit" onclick="iniciar()">
+            </div>
+            <table id="tabla" border="1" style="margin-top: 10px">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <div>
+                <label>Subtotal</label>
+                <input type="text" id="subtotal" class="input2"><br>
+                <label>IGV</label>
+                <input type="text" id="igv" class="input2"><br>
+                <label>Total</label>
+                <input type="text" id="total" class="input2"><br>
+
+            </div>
+
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
